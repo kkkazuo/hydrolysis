@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- カスタマイズ用CSS -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-custom.css">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <h1 class="title">Hydrolyzability Calculator</h1>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/model">Model</a></li>
+            <li><a href="/help">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="row">
+      <section class="file-upload">
+        <div class="text-center">
+          <h2>click a cat and select file!</h2>
+          <form action="/file"  method = "POST" enctype="multipart/form-data">
+            <label class="btn btn-default btn-file">
+              <img src="../static/neko.png" width=100 />
+              <input type="file" name="uploaded" style="display: none;" />
+            </label><br>
+            <input type="submit" value="Start Calculating!" name='submit_btn' />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <small>
+          Copyright &copy; Kazumasa Takenaka, Pharmacoinfomatics, Pharmaceutical Department, Osaka University<br>
+        </small>
+        <nav>
+          <ul>
+            <li><a href=https://github.com/kkkazuo/hydrolysis/>About</a></li>
+            <li><a href=http://pharmacometrics.github.io/>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

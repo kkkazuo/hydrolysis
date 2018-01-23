@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Model</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- カスタマイズ用CSS -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-custom.css">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <h1 class="title">Hydrolyzability Calculator</h1>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/model">Model</a></li>
+            <li><a href="/help">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="text-center">
+        <h2>why needed?</h2>
+        <p class="background">
+          How many chemical compounds are there around the world?<br>
+          ...130 million<br>
+          Can you research those environmental dynamics with experiments?<br>
+          ...No<br>
+          So you can manage the environmental risk without knowledge about environmental dynamics, right?<br>
+          ...<br>
+          Then let's talk about the future.<br>
+          AI &#215; Big Data. Machines surpass humans.<br>
+          To predict environmental dynamics is possible!<br>
+          The future is faster to create.<br>
+        </p>
+
+        <div class="model">
+          <h2>how was this built?</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Data</h4>
+            <p>
+              Open hydrolyzability data from several web sites<br>
+              Descriptors are calculated by <a href=https://github.com/mordred-descriptor>mordred</a><br>
+              Do you need? Contact <a href=http://pharmacometrics.github.io/>us</a>!
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h4>Preprocessing</h4>
+            <p>
+              drop 30%-missing descriptors<br>
+              complement missing value with median<br>
+              standarize explainers<br>
+              limited 500 explainers with <a href=https://topepo.github.io/caret/recursive-feature-elimination.html>REF</a><br>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Methods</h4>
+            <p>
+              combining classifiers with voting<br>
+              Do you want to know details? Contact <a href=http://pharmacometrics.github.io/>us</a>!
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h4>Evaluation</h4>
+            <p>
+              In test set<br>
+              Accuracy: 75.3%<br>
+              AUC: 0.757<br>              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <small>
+          Copyright &copy; Kazumasa Takenaka, Pharmacoinfomatics, Pharmaceutical Department, Osaka University<br>
+        </small>
+        <nav>
+          <ul>
+            <li><a href=https://github.com/kkkazuo/hydrolysis/>About</a></li>
+            <li><a href=http://pharmacometrics.github.io/>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

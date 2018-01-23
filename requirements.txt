@@ -1,0 +1,7 @@
+flask
+celery
+numpy
+mordred==0.4.1
+pandas
+sklearn
+scipy

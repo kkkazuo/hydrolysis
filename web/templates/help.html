@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- カスタマイズ用CSS -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-custom.css">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <h1 class="title">Hydrolyzability Calculator</h1>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="/model">Model</a></li>
+            <li><a href="/help">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 class="text-center">Help</h1>
+      <div class="row">
+        <h3>File Upload</h3>
+        <div class="col-sm-4">
+          <h4>1, Click the cat</h4>
+          <img src="../static/help_upload.png" width=300 />
+        </div>
+        <div class="col-sm-4">
+          <h4>2, Select a file</h4>
+          <p class="under">
+            file requirement
+          </p>
+          <p>
+            <img src="../static/help_format.png" width=300 /><br>
+            &#10003;csv format<br>
+            &#10003;put <a href=https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system>SMILES</a> vertically from top-left
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4>3, Click "Start calculating!"</h4>
+          <p>
+            <img src="../static/help_startcalculating.png" width=300 /><br>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Result</h3>
+        <div class="col-sm-4">
+          <h4>Table</h4>
+          <p>
+            <img src="../static/help_table.png" width=360 />
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Download</h4>
+          <p>
+            You can download result.<br>
+            <img src="../static/help_download.png" width=550 />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <small>
+          Copyright &copy; Kazumasa Takenaka, Pharmacoinfomatics, Pharmaceutical Department, Osaka University<br>
+        </small>
+        <nav>
+          <ul>
+            <li><a href=https://github.com/kkkazuo/hydrolysis/>About</a></li>
+            <li><a href=http://pharmacometrics.github.io/>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

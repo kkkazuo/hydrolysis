@@ -1,0 +1,69 @@
+/*body*/
+body {
+  padding-top: 130px;
+}
+
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* header */
+h1.title {
+  color: #FFFFFF;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+/*other*/
+input {
+  margin-top: 10px;
+}
+
+div.model {
+  margin-top: 60px;
+}
+
+/*paragraph*/
+p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+p.background {
+  margin-top: 10px;
+  font-size: 1.3em;
+  line-height: 2.0em;
+}
+
+p.under {
+  text-decoration: underline;
+}
