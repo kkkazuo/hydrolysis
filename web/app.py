@@ -39,7 +39,7 @@ def post_file():
                 calculate.delay(ID)
                 return redirect("/waiting/{}".format(ID))
             except:
-                return redirect('/help')
+                return redirect('/helping')
     else:
         return redirect("/")
 
@@ -73,6 +73,10 @@ def help():
     return render_template('help.html')
 
 
+@app.route('/helping')
+def _help():
+    return render_template('helping.html')
+
 @app.route('/result/<ID>')
 def result(ID):
     # read SQL and return tabledd
@@ -91,7 +95,7 @@ def result(ID):
         # you have to delete after update model (pkl file)
         return render_template('result.html', result=output_, ID=ID)
     except:
-        return render_template('help.html')
+        return render_template('helping.html')
 
 
 @app.route('/dl/<ID>')
