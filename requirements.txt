@@ -1,7 +1,26 @@
-flask
-celery
-numpy
-mordred==0.4.1
-pandas
-sklearn
-scipy
+anaconda                  custom           py36ha4fed55_0  
+anaconda-client           1.6.7                    py36_0  
+anaconda-navigator        1.6.12                   py36_0  
+anaconda-project          0.8.2            py36h9ee5d53_0  
+bottle                    0.12.9                   py36_0    conda-forge
+celery                    4.1.0                    py36_0    conda-forge
+conda                     4.4.7                    py36_0  
+conda-env                 2.6.0                h36134e3_0  
+flake8                    3.5.0                     <pip>
+flask                     0.12.2           py36h5658096_0  
+flask-cors                3.0.3            py36h7387b97_0  
+jinja2                    2.10             py36hd36f9c5_0  
+mordred                   0.6.0            py36h5e0fd4d_0    mordred-descriptor
+numpy                     1.11.3                   py36_0  
+pandas                    0.22.0           py36h0a44026_0  
+rdkit                     2017.03.3           np111py36_1    rdkit
+redis                     4.0.2                hc28a91c_0  
+sqlite                    3.13.0                        0  
+contextlib2               0.5.5            py36hd66e5e7_0  
+pandas                    0.22.0           py36h0a44026_0  
+pandas-datareader         0.5.0                    py36_0  
+boost                     1.56.0                   py36_3    rdkit
+nose                      1.3.7            py36h73fae2b_2  
+pycosat                   0.6.3            py36hee92d8f_0  
+scipy                     0.19.0              np111py36_0  
+Python 3.6.2 :: Anaconda custom (64-bit)

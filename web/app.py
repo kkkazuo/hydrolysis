@@ -39,7 +39,7 @@ def post_file():
                 calculate.delay(ID)
                 return redirect("/waiting/{}".format(ID))
             except:
-                return redirect('/helping')
+                return render_template('helping.html')
     else:
         return redirect("/")
 
@@ -58,7 +58,6 @@ def status(ID):
         result = curs.fetchone()
         if result is None:
             return abort(404)
-
         ID, status = result
         return jsonify({"status": status, "id": ID})
 
@@ -77,22 +76,17 @@ def help():
 def _help():
     return render_template('helping.html')
 
+
 @app.route('/result/<ID>')
 def result(ID):
     # read SQL and return tabledd
     with sqlite3.connect('main.sqlite') as conn:
         curs = conn.cursor()
         curs.execute("SELECT smiles, hydrolyzability FROM result WHERE id= ?", (ID,))
-        # output format: [(smiles, hydrolyzability),(~, ~),...]
         output = curs.fetchall()
     try:
         lis = 'F,T,error'.split(',')
-        output_ = [(smi, lis[i]) for smi, i in output]
-        # following is temp
-        smiles = [l[0] for l in output]
-        hyd = 'F,T,T,error,F,F'.split(',')
-        output_ = [(smi, hy) for smi, hy in zip(smiles, hyd)]
-        # you have to delete after update model (pkl file)
+        output_ = [(smi, lis[i]) for (smi, i) in output]
         return render_template('result.html', result=output_, ID=ID)
     except:
         return render_template('helping.html')

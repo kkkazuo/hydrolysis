@@ -1,14 +1,12 @@
 import os
 import sqlite3
-import json
-import pandas as pd
 from celery import Celery
 from flask import Flask
+from sklearn.externals import joblib
 from mordred import Calculator, descriptors
 from rdkit import Chem
-from rdkit.Chem import SaltRemover
-from sklearn.externals import joblib
-
+import numpy as np
+import pandas as pd
 DATADIR = os.path.dirname(__file__)
 
 
@@ -41,17 +39,14 @@ celery = make_celery(flask_app)
 def calculate(ID):
     with sqlite3.connect('main.sqlite') as conn:
         curs = conn.cursor()
-
         # get smiles from DB
         curs.execute("SELECT chem_index, smiles FROM result WHERE id = ?", (ID,))
         smiles_list = curs.fetchall()
-
         # calculate descriptors and result
-        for i, chemical in smiles_list:
+        for (i, smiles) in smiles_list:
             try:
-                descriptor_values = calculate_descriptor(chemical[0])
-                hydrolyzability = calculate_result(descriptor_values)
-
+                descriptors = calculate_descriptor(smiles)
+                hydrolyzability = calculate_result(descriptors)
                 # update result in hydrolyzability of main.sqlite
                 curs.execute(
                     "UPDATE result SET hydrolyzability = ? WHERE id = ? AND chem_index = ?",
@@ -67,36 +62,30 @@ def calculate(ID):
         curs.execute("UPDATE status SET status = 1 WHERE id = ?", (ID,))
 
 
-calc = Calculator.from_json((json.load(open("./pkl_files/calc.json", "rt"))))
+calc = Calculator(descriptors, ignore_3D=True)
 
 
 # calculate descriptors with mordred
 def calculate_descriptor(smiles):
     mol = Chem.MolFromSmiles(smiles)
-    # remove = SaltRemover.SaltRemover()
-    # removed = remove.StripMol(mol,dontRemoveEverything=True)
-    calcurated = calc(mol)
-    return calcurated
+    calculated = pd.Series(calc(mol))
+    processed = calculated.apply(lambda x: np.nan if type(x) == str else float(x))
+    return processed
 
 
 # load imputer parameters
-imp = joblib.load(os.path.join(DATADIR, './pkl_files/Imputer.pkl'))
-
+imp = joblib.load(os.path.join(DATADIR, './pkl_files/imp.pkl'))
 # load standard scaler parameters
-std = joblib.load(os.path.join(DATADIR, './pkl_files/Std.pkl'))
-
+std = joblib.load(os.path.join(DATADIR, './pkl_files/std.pkl'))
 # load model
-clf = joblib.load(os.path.join(DATADIR, './pkl_files/model.pkl'))
-
+clf = joblib.load(os.path.join(DATADIR, './pkl_files/clf.pkl'))
 # load RFE
-rfe = joblib.load(os.path.join(DATADIR, './pkl_files/RFE.pkl'))
+rfe = joblib.load(os.path.join(DATADIR, './pkl_files/rfe.pkl'))
 
 
 # calculate result (0 or 1) with built model
-def calculate_result(descriptor):
-    descriptor_series = pd.Series(descriptor)
-    descriptor_nan = descriptor_series.apply(lambda x: '' if type(x) == str else float(x))
-    processed = std.transform(imp.transform(descriptor_nan))
+def calculate_result(descriptors):
+    processed = std.transform(imp.transform(descriptors))
     transformed = rfe.transform(processed)
     result = clf.predict(transformed)
     return result
