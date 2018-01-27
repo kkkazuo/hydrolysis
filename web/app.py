@@ -79,7 +79,7 @@ def _help():
 
 @app.route('/result/<ID>')
 def result(ID):
-    # read SQL and return tabledd
+    # read SQL and return table
     with sqlite3.connect('main.sqlite') as conn:
         curs = conn.cursor()
         curs.execute("SELECT smiles, hydrolyzability FROM result WHERE id= ?", (ID,))
@@ -111,4 +111,4 @@ def download_csv(ID):
 
 
 if __name__ == '__main__':
-    app.run(port=9999, debug=True)
+    app.run(port=9999, debug=False)
