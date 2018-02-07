@@ -10,43 +10,19 @@
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/prototype.js"></script>
+    <script src="../static/partial.js"></script>
   </head>
 
-  <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <h1 class="title">Hydrolyzability Calculator</h1>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/model">Model</a></li>
-            <li><a href="/help">Help</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
+  <body onload="header();footer();">
+    <div id="header"></div>
     <div class="text-center">
       <h2>Calculating<h2><br>
       <div id="loading">
         <img src="../static/grgr.gif" alt="guruguru">
       </div>
     </div>
-
-    <footer class="footer">
-      <div class="container">
-        <small>
-          Copyright &copy; Kazumasa Takenaka, Pharmacoinfomatics, Pharmaceutical Department, Osaka University<br>
-        </small>
-        <nav>
-          <ul>
-            <li><a href="/https://github.com/kkkazuo/" target="_blank">About</a></li>
-            <li><a href=http://pharmacometrics.github.io/ target="_blank">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-
+    <div id="footer"></div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../static/waiting.js"></script>
   </body>

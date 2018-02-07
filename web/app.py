@@ -110,5 +110,16 @@ def download_csv(ID):
     return response
 
 
+# for rendering
+@app.route('/_footer')
+def footer():
+    return render_template('_footer.html')
+
+
+@app.route('/_header')
+def header():
+    return render_template('_header.html')
+
+
 if __name__ == '__main__':
     app.run(port=9999, debug=False)
