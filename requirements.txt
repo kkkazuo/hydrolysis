@@ -1,203 +1,272 @@
-alabaster==0.7.10
-amqp==2.2.2
-anaconda-client==1.6.7
-anaconda-navigator==1.6.12
-anaconda-project==0.8.2
-appnope==0.1.0
-appscript==1.0.1
-asn1crypto==0.24.0
-astroid==1.6.0
-astropy==2.0.3
-attrs==17.3.0
-Babel==2.5.3
-backports.shutil-get-terminal-size==1.0.0
-base58==0.2.5
-beautifulsoup4==4.6.0
-billiard==3.5.0.2
-bitarray==0.8.1
-bkcharts==0.2
-blaze==0.11.3
-bleach==2.1.2
-bokeh==0.12.13
-boto==2.48.0
-bottle==0.12.9
-Bottleneck==1.2.1
-celery==4.1.0
-certifi==2017.11.5
-cffi==1.11.4
-chardet==3.0.4
-chest==0.2.3
-click==6.7
-cloudpickle==0.5.2
-clyent==1.2.2
-colorama==0.3.9
-conda==4.4.7
-configobj==5.0.6
-contextlib2==0.5.5
-coverage==4.4.2
-cryptography==2.1.4
-cycler==0.10.0
-Cython==0.27.3
-cytoolz==0.9.0
-dask==0.16.1
-datashape==0.5.4
-decorator==4.2.1
-dill==0.2.7.1
-distributed==1.20.2
-Django==1.11.8
-docutils==0.14
-entrypoints==0.2.3
-et-xmlfile==1.0.1
-fastcache==1.0.2
-flake8==3.5.0
-Flask==0.12.2
-Flask-Cors==3.0.3
-future==0.16.0
-gevent==1.2.2
-gmpy2==2.0.8
-greenlet==0.4.12
-h5py==2.7.1
-heapdict==1.0.0
-html5lib==1.0.1
-hypothesis==3.38.5
-idna==2.6
-imageio==2.2.0
-imagesize==0.7.1
-ipykernel==4.8.0
-ipython==6.2.1
-ipython-genutils==0.2.0
-ipywidgets==7.1.0
-isort==4.2.15
-itsdangerous==0.24
-jdcal==1.3
-jedi==0.11.1
-Jinja2==2.10
-jsonschema==2.6.0
-jupyter-client==5.2.1
-jupyter-console==5.2.0
-jupyter-core==4.4.0
-Keras==2.0.6
-kombu==4.1.0
-lazy-object-proxy==1.3.1
-llvmlite==0.21.0
-locket==0.2.0
-lxml==4.1.1
-MarkupSafe==1.0
-matplotlib==2.0.2
-mccabe==0.6.1
-mistune==0.8.3
-mordred==0.6.0
-mpmath==1.0.0
-msgpack-python==0.5.1
-multipledispatch==0.4.9
-navigator-updater==0.1.0
-nbconvert==5.3.1
-nbformat==4.4.0
-networkx==2.1
-nltk==3.2.5
-nose==1.3.7
-notebook==5.3.1
-numba==0.36.2
-numexpr==2.6.2
-numpy==1.11.3
-numpydoc==0.7.0
-odo==0.5.1
-olefile==0.44
-openpyxl==2.4.10
-packaging==16.8
-pandas==0.22.0
-pandas-datareader==0.5.0
-pandocfilters==1.4.2
-parso==0.1.1
-partd==0.3.8
-path.py==10.5
-pathlib2==2.3.0
-patsy==0.5.0
-pep8==1.7.1
-pew==1.1.1
-pexpect==4.3.1
-pickleshare==0.7.4
-Pillow==4.2.1
-pipenv==9.0.0
-pluggy==0.6.0
-ply==3.10
-prompt-toolkit==1.0.15
-psutil==5.4.3
-ptyprocess==0.5.2
-py==1.5.2
-pyasn1==0.4.2
-pycodestyle==2.3.1
-pycosat==0.6.3
-pycparser==2.18
-pycrypto==2.6.1
-pycurl==7.43.0.1
-pyflakes==1.6.0
-Pygments==2.2.0
-pylint==1.8.1
-Pympler==0.5
-pyodbc==4.0.22
-pyOpenSSL==17.5.0
-pyparsing==2.2.0
-pyreadline==2.1
-PySocks==1.6.7
-pytest==3.3.2
-python-dateutil==2.6.1
-pytz==2017.3
-PyWavelets==0.5.2
-PyYAML==3.12
-pyzmq==16.0.3
-QtAwesome==0.4.4
-qtconsole==4.3.1
-QtPy==1.3.1
-redis==2.10.6
-requests==2.18.4
-requests-file==1.4.1
-requests-ftp==0.3.1
-rope==0.10.7
-ruamel-yaml==0.11.14
-scikit-image==0.13.0
-scikit-learn==0.18.1
-scipy==0.19.0
-seaborn==0.8.1
-Send2Trash==1.4.2
-simplegeneric==0.8.1
-simplejson==3.12.0
-singledispatch==3.4.0.3
-six==1.11.0
-snowballstemmer==1.2.1
-sockjs-tornado==1.0.3
-sortedcollections==0.5.3
-sortedcontainers==1.5.9
-Sphinx==1.6.6
-sphinxcontrib-websupport==1.0.1
-spyder==3.2.6
-SQLAlchemy==1.2.1
-statsmodels==0.8.0
-sympy==1.1.1
-tables==3.4.2
-tblib==1.3.2
-terminado==0.8.1
-testpath==0.3.1
-Theano==0.9.0
-toolz==0.9.0
-tornado==4.5.3
-tqdm==4.19.4
-traitlets==4.3.2
-typing==3.6.2
-unicodecsv==0.14.1
-urllib3==1.22
-vine==1.1.4
-virtualenv==15.1.0
-virtualenv-clone==0.2.6
-wcwidth==0.1.7
-webencodings==0.5.1
-Werkzeug==0.14.1
-widgetsnbextension==3.1.0
-wrapt==1.10.11
-WTForms==2.1
-xlrd==1.1.0
-XlsxWriter==1.0.2
-xlwings==0.11.5
-xlwt==1.2.0
-zict==0.1.3
-zope.interface==4.4.3
+# packages in environment at /Users/mac/anaconda:
+#
+_license                  1.1                      py36_1  
+alabaster                 0.7.10           py36h174008c_0  
+amqp                      2.2.2                    py36_0    conda-forge
+anaconda                  custom           py36ha4fed55_0  
+anaconda-client           1.6.7                    py36_0  
+anaconda-navigator        1.6.12                   py36_0  
+anaconda-project          0.8.2            py36h9ee5d53_0  
+appnope                   0.1.0            py36hf537a9a_0  
+appscript                 1.0.1            py36h9e71e49_1  
+asn1crypto                0.24.0                   py36_0  
+astroid                   1.6.0                    py36_0  
+astropy                   2.0.3            py36h1de35cc_0  
+attrs                     17.3.0           py36h9f37037_0  
+babel                     2.5.3                    py36_0  
+backports                 1.0              py36ha3c1827_1  
+backports.shutil_get_terminal_size 1.0.0            py36hd7a2ee4_2  
+base58                    0.2.5                     <pip>
+beautifulsoup4            4.6.0            py36h72d3c9f_1  
+billiard                  3.5.0.2                  py36_0    conda-forge
+bitarray                  0.8.1            py36h20fa61d_0  
+bkcharts                  0.2              py36h073222e_0  
+blaze                     0.11.3           py36h02e7a37_0  
+bleach                    2.1.2                    py36_0  
+bokeh                     0.12.13          py36h2f9c1c0_0  
+boost                     1.56.0                   py36_3    rdkit
+boto                      2.48.0           py36hdbc59ac_1  
+bottle                    0.12.9                   py36_0    conda-forge
+bottleneck                1.2.1            py36hbd380ad_0  
+bzip2                     1.0.6                h649919c_2  
+ca-certificates           2017.08.26           ha1e5d58_0  
+cairo                     1.14.8                        0  
+celery                    4.1.0                    py36_0    conda-forge
+certifi                   2017.11.5        py36ha569be9_0  
+cffi                      1.11.4           py36h342bebf_0  
+chardet                   3.0.4            py36h96c241c_1  
+chest                     0.2.3                    py36_0  
+click                     6.7              py36hec950be_0  
+cloudpickle               0.5.2            py36h379c7bd_0  
+clyent                    1.2.2            py36hae3ad88_0  
+colorama                  0.3.9            py36hd29a30c_0  
+conda                     4.4.7                    py36_0  
+conda-env                 2.6.0                h36134e3_0  
+configobj                 5.0.6                    py36_0  
+contextlib2               0.5.5            py36hd66e5e7_0  
+coverage                  4.4.2            py36h8d5022f_0  
+cryptography              2.1.4            py36h842514c_0  
+curl                      7.55.1               h2e228d0_4  
+cycler                    0.10.0           py36hfc81398_0  
+cython                    0.27.3           py36h6ecb376_0  
+cytoolz                   0.9.0            py36h1de35cc_0  
+dask                      0.16.1                   py36_0  
+dask-core                 0.16.1                   py36_0  
+datashape                 0.5.4            py36hfb22df8_0  
+dbus                      1.10.22              h50d9ad6_0  
+decorator                 4.2.1                    py36_0  
+dill                      0.2.7.1          py36hdf89ffe_0  
+distributed               1.20.2                   py36_0  
+django                    1.11.8           py36hd476221_0  
+docutils                  0.14             py36hbfde631_0  
+entrypoints               0.2.3            py36hd81d71f_2  
+erlang                    19.0                          0    conda-forge
+et_xmlfile                1.0.1            py36h1315bdc_0  
+expat                     2.2.5                hb8e80ba_0  
+fastcache                 1.0.2            py36h8606a76_0  
+flake8                    3.5.0                     <pip>
+flask                     0.12.2           py36h5658096_0  
+flask-cors                3.0.3            py36h7387b97_0  
+fontconfig                2.12.1                        3  
+freetype                  2.5.5                         2  
+future                    0.16.0                    <pip>
+get_terminal_size         1.0.0                h7520d66_0  
+gettext                   0.19.8.1             hb0f4f8b_2  
+gevent                    1.2.2            py36ha70b9d6_0  
+glib                      2.53.6               ha08cb78_1  
+gmp                       6.1.2                hb37e062_1  
+gmpy2                     2.0.8            py36hf9c35bd_2  
+greenlet                  0.4.12           py36hf09ba7b_0  
+h5py                      2.7.1            py36h39cdac5_0  
+hdf5                      1.10.1               ha036c08_1  
+heapdict                  1.0.0            py36h27a9ac6_0  
+html5lib                  1.0.1            py36h2f9c1c0_0  
+hypothesis                3.38.5           py36hcba0581_0  
+icu                       54.1                          0  
+idna                      2.6              py36h8628d0a_1  
+imageio                   2.2.0            py36h5e01289_0  
+imagesize                 0.7.1            py36h3495948_0  
+intel-openmp              2018.0.0             h8158457_8  
+ipykernel                 4.8.0                    py36_0  
+ipython                   6.2.1            py36h3dda519_1  
+ipython_genutils          0.2.0            py36h241746c_0  
+ipywidgets                7.1.0                    py36_0  
+isort                     4.2.15           py36hceb2a01_0  
+itsdangerous              0.24             py36h49fbb8d_1  
+jbig                      2.1                  h4d881f8_0  
+jdcal                     1.3              py36h1986823_0  
+jedi                      0.11.1                   py36_0  
+jinja2                    2.10             py36hd36f9c5_0  
+jpeg                      9b                   he5867d9_2  
+jsonschema                2.6.0            py36hb385e00_0  
+jupyter                   1.0.0            py36h598a6cc_0  
+jupyter_client            5.2.1                    py36_0  
+jupyter_console           5.2.0            py36hccf5b1c_1  
+jupyter_core              4.4.0            py36h79cf704_0  
+Keras                     2.0.6                     <pip>
+kombu                     4.1.0                    py36_0    conda-forge
+lazy-object-proxy         1.3.1            py36h2fbbe47_0  
+libatomic_ops             7.4.2                         0    conda-forge
+libcxx                    4.0.1                h579ed51_0  
+libcxxabi                 4.0.1                hebd6815_0  
+libffi                    3.2.1                h475c297_4  
+libgfortran               3.0.1                h93005f0_2  
+libiconv                  1.14                          0  
+libpng                    1.6.34               he12f830_0  
+libsodium                 1.0.15               hd9e47c5_0  
+libssh2                   1.8.0                h322a93b_4  
+libtiff                   4.0.9                h0dac147_0  
+libxml2                   2.9.4                         0  
+libxslt                   1.1.29                        0  
+llvmlite                  0.21.0           py36hff739e7_0  
+locket                    0.2.0            py36hca03003_1  
+lxml                      4.1.1            py36h6c891f4_0  
+lzo                       2.10                 h362108e_2  
+markupsafe                1.0              py36h3a1e703_1  
+matplotlib                2.0.2               np111py36_0  
+mccabe                    0.6.1            py36hdaeb55d_0  
+mistune                   0.8.3                    py36_0  
+mkl                       2017.0.4             h1fae6ae_0  
+mkl-service               1.1.2                    py36_3  
+mordred                   0.6.0            py36h5e0fd4d_0    mordred-descriptor
+mpc                       1.0.3                h7a72875_5  
+mpfr                      3.1.5                h711e7fd_2  
+mpmath                    1.0.0            py36hf1b8295_2  
+msgpack-python            0.5.1            py36h04f5b5a_0  
+multipledispatch          0.4.9            py36hc5f92b5_0  
+navigator-updater         0.1.0            py36h7aee5fb_0  
+nbconvert                 5.3.1            py36h810822e_0  
+nbformat                  4.4.0            py36h827af21_0  
+ncurses                   5.9                          10  
+networkx                  2.1                      py36_0  
+nltk                      3.2.5            py36h1190bce_0  
+nose                      1.3.7            py36h73fae2b_2  
+notebook                  5.3.1                    py36_0  
+numba                     0.36.2          np111py36h439baf9_0  
+numexpr                   2.6.2               np111py36_0  
+numpy                     1.11.3                   py36_0  
+numpydoc                  0.7.0            py36he54d08e_0  
+odo                       0.5.1            py36hc1af34a_0  
+olefile                   0.44             py36ha08bf50_0  
+openpyxl                  2.4.10                   py36_0  
+openssl                   1.0.2n               hdbc3d79_0  
+packaging                 16.8             py36he5e8135_0  
+pandas                    0.22.0           py36h0a44026_0  
+pandas-datareader         0.5.0                    py36_0  
+pandoc                    1.19.2.1             ha5e8f32_1  
+pandocfilters             1.4.2            py36h3b0b094_1  
+parso                     0.1.1            py36hc90e01c_0  
+partd                     0.3.8            py36hf5c4cb8_0  
+path.py                   10.5             py36h7bcb313_0  
+pathlib2                  2.3.0            py36h877a6d8_0  
+patsy                     0.5.0                    py36_0  
+pcre                      8.41                 hfb6ab37_1  
+pep8                      1.7.1                    py36_0  
+pew                       1.1.1                     <pip>
+pexpect                   4.3.1                    py36_0  
+pickleshare               0.7.4            py36hf512f8e_0  
+pillow                    4.2.1                    py36_0  
+pip                       9.0.1            py36h1555ced_4  
+pipenv                    9.0.0                     <pip>
+pixman                    0.34.0               hca0a616_3  
+pluggy                    0.6.0            py36hb1d0581_0  
+ply                       3.10             py36h10e714e_0  
+prompt_toolkit            1.0.15           py36haeda067_0  
+psutil                    5.4.3            py36h1de35cc_0  
+ptyprocess                0.5.2            py36he6521c3_0  
+py                        1.5.2            py36ha69170d_0  
+pyasn1                    0.4.2            py36h62a34ed_0  
+pycodestyle               2.3.1            py36h83e8646_0  
+pycosat                   0.6.3            py36hee92d8f_0  
+pycparser                 2.18             py36h724b2fc_1  
+pycrypto                  2.6.1            py36h72f2894_1  
+pycurl                    7.43.0.1         py36hdbc3d79_0  
+pyflakes                  1.6.0            py36hea45e83_0  
+pygments                  2.2.0            py36h240cd3f_0  
+pylint                    1.8.1                    py36_0  
+pympler                   0.5              py36hc2752d1_0  
+pyodbc                    4.0.22           py36h0a44026_0  
+pyopenssl                 17.5.0           py36h51e4350_0  
+pyparsing                 2.2.0            py36hb281f35_0  
+pyqt                      5.6.0            py36he5c6137_6  
+pyreadline                2.1                       <pip>
+pysocks                   1.6.7            py36hfa33cec_1  
+pytables                  3.4.2            py36hfbd7ab0_2  
+pytest                    3.3.2                    py36_0  
+python                    3.6.2                         0  
+python-dateutil           2.6.1            py36h86d2abb_1  
+python.app                2                py36h54569d5_7  
+pytz                      2017.3           py36hf0bf824_0  
+pywavelets                0.5.2            py36h2710a04_0  
+pyyaml                    3.12             py36h2ba1e63_1  
+pyzmq                     16.0.3           py36he48b5ad_0  
+qt                        5.6.2                         2  
+qtawesome                 0.4.4            py36h468c6fb_0  
+qtconsole                 4.3.1            py36hd96c0ff_0  
+qtpy                      1.3.1            py36h16bb863_0  
+rdkit                     2017.03.3           np111py36_1    rdkit
+readline                  6.2                           2  
+redis                     4.0.2                hc28a91c_0  
+redis-py                  2.10.6           py36h7a28c18_0  
+requests                  2.18.4           py36h4516966_1  
+requests-file             1.4.1                    py36_0  
+requests-ftp              0.3.1                    py36_0  
+rope                      0.10.7           py36h68959ac_0  
+ruamel_yaml               0.11.14          py36h9d7ade0_2  
+scikit-image              0.13.0           py36h398857d_1  
+scikit-learn              0.18.1              np111py36_1  
+scipy                     0.19.0              np111py36_0  
+seaborn                   0.8.1            py36h595ecd9_0  
+send2trash                1.4.2                    py36_0  
+setuptools                38.4.0                   py36_0  
+simplegeneric             0.8.1            py36he5b5b09_0  
+simplejson                3.12.0           py36ha579bd7_0  
+singledispatch            3.4.0.3          py36hf20db9d_0  
+sip                       4.18.1           py36h2824476_2  
+six                       1.11.0           py36h0e22d5e_1  
+snowballstemmer           1.2.1            py36h6c7b616_0  
+sockjs-tornado            1.0.3                    py36_0  
+sortedcollections         0.5.3            py36he9c3ed6_0  
+sortedcontainers          1.5.9                    py36_0  
+sphinx                    1.6.6                    py36_0  
+sphinxcontrib             1.0              py36h9364dc8_1  
+sphinxcontrib-websupport  1.0.1            py36h92f4a7a_1  
+spyder                    3.2.6                    py36_0  
+sqlalchemy                1.2.1            py36h1de35cc_0  
+sqlite                    3.13.0                        0  
+statsmodels               0.8.0            py36h9c68fc9_0  
+sympy                     1.1.1            py36h7f3cf04_0  
+tblib                     1.3.2            py36hda67792_0  
+terminado                 0.8.1                    py36_0  
+testpath                  0.3.1            py36h625a49b_0  
+Theano                    0.9.0                     <pip>
+tk                        8.5.18                        0  
+toolz                     0.9.0                    py36_0  
+tornado                   4.5.3                    py36_0  
+tqdm                      4.19.4           py36he502594_0  
+traitlets                 4.3.2            py36h65bd3ce_0  
+typing                    3.6.2            py36haa2d9ef_0  
+unicodecsv                0.14.1           py36he531d66_0  
+unixodbc                  2.3.4                h4cb4dde_1  
+urllib3                   1.22             py36h68b9469_0  
+vine                      1.1.4                    py36_0    conda-forge
+virtualenv                15.1.0                   py36_0  
+virtualenv-clone          0.2.6                     <pip>
+wcwidth                   0.1.7            py36h8c6ec74_0  
+webencodings              0.5.1            py36h3b9701d_1  
+werkzeug                  0.14.1                   py36_0  
+wheel                     0.30.0           py36h5eb2c71_1  
+widgetsnbextension        3.1.0                    py36_0  
+wrapt                     1.10.11          py36hc29e774_0  
+WTForms                   2.1                       <pip>
+xlrd                      1.1.0            py36h336f4a2_1  
+xlsxwriter                1.0.2            py36h3736301_0  
+xlwings                   0.11.5                   py36_0  
+xlwt                      1.2.0            py36h5ad1178_0  
+xz                        5.2.3                h0278029_2  
+yaml                      0.1.7                hc338f04_2  
+zeromq                    4.2.2                ha360ad0_2  
+zict                      0.1.3            py36h71da714_0  
+zlib                      1.2.11               hf3cbc9b_2  
+zope                      1.0                      py36_0  
+zope.interface            4.4.3            py36h74e83c9_0  

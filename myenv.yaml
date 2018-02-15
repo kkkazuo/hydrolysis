@@ -1,0 +1,5 @@
+name: hydrolysis
+channels:
+  - defaults
+prefix: /Users/mac/anaconda/envs/hydrolysis
+
