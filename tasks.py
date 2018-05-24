@@ -74,13 +74,13 @@ def calculate_descriptor(smiles):
 
 
 # load imputer parameters
-imp = joblib.load(os.path.join(DATADIR, './pkl_files/imp.pkl'))
+imp = joblib.load(os.path.join(DATADIR, './asset/pkl_files/imp.pkl'))
 # load standard scaler parameters
-std = joblib.load(os.path.join(DATADIR, './pkl_files/std.pkl'))
+std = joblib.load(os.path.join(DATADIR, './asset/pkl_files/std.pkl'))
 # load model
-clf = joblib.load(os.path.join(DATADIR, './pkl_files/clf.pkl'))
+clf = joblib.load(os.path.join(DATADIR, './asset/pkl_files/clf.pkl'))
 # load RFE
-rfe = joblib.load(os.path.join(DATADIR, './pkl_files/rfe.pkl'))
+rfe = joblib.load(os.path.join(DATADIR, './asset/pkl_files/rfe.pkl'))
 
 
 # calculate result (0 or 1) with built model
