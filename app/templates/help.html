@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help</title>
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/prototype.js"></script>
+    <script src="../static/partial.js"></script>
+  </head>
+
+  <body onload="header();footer();">
+    <div id="header"></div>
+    
+    <div class="container">
+      <h1 class="text-center">Help</h1>
+      <div class="row">
+        <h3>File Upload</h3>
+        <div class="col-sm-4">
+          <h4>1, Click the cat</h4>
+          <img src="../static/help_upload.png" width=300 />
+        </div>
+        <div class="col-sm-4">
+          <h4>2, Select a file</h4>
+          <p class="under">
+            file requirement
+          </p>
+          <p>
+            <img src="../static/help_format.png" width=300 /><br>
+            &#10003;csv format<br>
+            &#10003;put <a href=https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system target="_blank">SMILES</a> vertically from top-left
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4>3, Click "Start calculating!"</h4>
+          <p>
+            <img src="../static/help_startcalculating.png" width=300 /><br>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Result</h3>
+        <div class="col-sm-4">
+          <h4>Table</h4>
+          <p>
+            <img src="../static/help_table.png" width=360 />
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Download</h4>
+          <p>
+            You can download result.<br>
+            <img src="../static/help_download.png" width=550 />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
