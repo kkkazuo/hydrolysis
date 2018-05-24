@@ -1,3 +1,2 @@
-app/* linguist-vendored
-templates/* linguist-vendored=false
-static/* linguist-vendored=false
+app/templates/* linguist-vendored=false
+app/static/* linguist-vendored=false
